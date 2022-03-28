@@ -46,46 +46,47 @@
         .outro {
             height: 500px;
         }
+
+        .vertical-row {
+            Float:left;
+            height:100px;
+            width:1px; /* edit this if you want */
+            background-color: your color
+} 
     </style>
 </head>
 ​
 <body>
     <h1 style = "text-align:center;">Occupations in the US</h1>
-    <p style="font-size:15px; text-align:center;">This website provides information on employment by major categories for each state and state-like areas in the USA from 2016 to 2020. </p>
+    <p>This website provides information on employment by major categories for each state and state-like areas in the USA from 2016 to 2020. </p>
 ​
     <hr>
 ​
-    <h3 style = "text-align:center;">Explore Occupation Categories</h3>
-    <div class = 'box'>
-		<div class = 'explanation'> There are 23 major occupation categories and each contains a list of sub-categories. The area of each circle corresponds to the number of jobs in that category for the entire USA in the year 2020. 
-            You can click each individual bubble to view the minor occupation categories under the major category.</div>
-        <iframe width="50%" height="500" frameborder="0"
-        src="https://observablehq.com/embed/@lywu0607/zoomable-circle-packing?cells=chart" frameborder="0" scrolling="no" width="100%" height="512" align="left"></iframe>
+    <h3 style = "text-align:center;">Explore job counts by state with year</h3>
+    <div class = 'explanation'>
+		The below treemap shows the number of people employed in each of the 51 states in the US. 
+        Each box is zoomable to show the number of jobs broken down by major occupation categories. Click the header on top that starts with usa to zoom back out.
+        <iframe width="900" height="900" frameborder="0"
+        src="https://observablehq.com/embed/@judezhu/prototype?cells=chart"></iframe>
     </div>
-​
-    <div class = 'box'>
-		<div class = 'explanation'>This chart shows the average income for each of the major occupation category, broken down by year and state/territory/district. 
-            Use the dropdown to choose the year and state of interest.</div>
-        <iframe width="50%" height="490" frameborder="0"
-        src="https://observablehq.com/embed/@lywu0607/final-project-notebook?cells=viewof+year_list%2Cviewof+states%2Cbarchart" frameborder="0" scrolling="no" width="100%" height="512" align="right"></iframe>
+
+    <hr>
+
+​   <h3 style = "text-align:center;">Explore Salary Trends by State and Year</h3>
+    <div class = 'explanation'>
+		This chart shows the average income for each of the major occupation category, broken down by year and state/territory/district. 
+            Use the dropdown to choose the year and state of interest.
+        <iframe width="700" height="700" frameborder="0"
+        src="https://observablehq.com/embed/@lywu0607/final-project-notebook?cells=viewof+year_list%2Cviewof+states%2Cbarchart"></iframe>
     </div>
 ​
     <hr>
     
     <div class = 'box2'>
     <h3 style = "text-align:center;">Explore Salary Trends by State</h3>
-    <div class = 'explanation'>The below US map shows the 51 US states, with the shade of color representing the total number of of people employed as a % of total US population in each state. If you click on a particular state on the map, you can view the average income trends for all the major employment categories from 2016 to 2020.</div>
-      <iframe width="100%" height="587" frameborder="0"
-    src="https://observablehq.com/embed/@lywu0607/final-project-notebook?cells=main_chart"></iframe>
-    </div>
-​
-    
-    <div class = 'box2'>
-    <h3 style = "text-align:center;">Explore job counts by state with year</h3>
-    <div class = 'explanation'>The below treemap shows the number of people employed in each of the 51 states in the US. 
-        Each box is zoomable to show the number of jobs broken down by major occupation categories. Click the header on top that starts with usa... to zoom back out.</div>
-      <iframe width="100%" height="587" frameborder="0"
-    src="https://observablehq.com/embed/@lywu0607/final-project-notebook?cells=treemap"></iframe>
+    <div class = 'explanation'>The below US map shows the 51 US states, with the shade of color representing the total number of of people employed in each state. If you click on a particular state on the map, you can view the average income trends for all the major employment categories from 2016 to 2020.</div>
+    <iframe width="100%" height="651" frameborder="0"
+    src="https://observablehq.com/embed/@judezhu/prototype?cells=key%2Cmain_chart"></iframe>
     </div>
 ​
 ​
