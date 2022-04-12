@@ -50,38 +50,66 @@
 </head>
 ​
 <body>
-    <h1 style = "text-align:center;">Occupations in the US</h1>
-    <p style="font-size:15px; text-align:center;">This website provides information on employment broken up into major categories for each state and state-like areas in the USA. Also, some charts show data by years, from 2016 to 2020. Employment numbers total per state and per category are shown.</p>
+    <h1 style ="font-size:50px;text-align:center;">Occupations in the US</h1>
+    <p style="font-size:30px; text-align:center;"> An Interactive Summary of US Employment & Mean Income From 2016-2020</p>
+        
+    
+    <div class = 'About'>
+        <h2 style = "font-size:20px; text-align:left;">About</h2>
+        <p style="font-size:15px; text-align:left;">
+            This website displays 3 interactive visualizations that summarizes US Employment & Mean Income from a specific perspective. 
+            <br> Mean Income Trend 2016-2020: Mean Income Trend for all Occupations in a chosen state
+            <br> Mean Income by State: A geographical visualization of Statewise Mean Income with additional information about Mean Income rank within the state.
+            <br> Employment by State and Occupation: A zoomable visualization that represents the hierarchical view of number of employment by occupation in each state. </p>
+​            
+    <h2 style = "font-size:20px; text-align:left;">Use</h2>
+    <p style="font-size:15px; text-align:left;">
+    The tool can be useful to researchers, journalists, professionals, students and anyone who has an interest in employment and salary trend.
+    <br> Please follow the instruction on each visualization to reveal additional information
+    <br> Enjoy! </p>
+
+    <h2 style = "font-size:20px; text-align:left;">Supplemental Information</h2>
+    <p style="font-size:15px; text-align:left;">
+            Data: U.S Bureau of Labor Statistics (https://www.bls.gov/oes/tables.htm)
+            <br>
+            Occupation: 23 major profession categories defined by BLS</p>               
+</div>
 ​
-    <hr>
-​
-    <h3 style = "text-align:center;">Mean Income Trend 2016-2020</h3>
-​
+    
     <div class = 'box'>
+        <h3 style = "text-align:center;">Mean Income Trend 2016-2020</h3>
 		<div class = 'explanation'>This Line Graph shows the average income trend for a particular state over time. <strong>Choose </strong>a state from the dropdown and <strong>scroll over the lines</strong> to see details</div>
-        <iframe width="100%" height="703" frameborder="0"
-  src="https://observablehq.com/embed/076f328cf7e1c43e?cells=scrollable_line_chart%2Cviewof+chosen_state"></iframe>
+        <iframe width="95%" height="800" frameborder="0"
+  src="https://observablehq.com/embed/031b54f142b893ae?cells=scrollable_line_chart%2Cviewof+chosen_state"></iframe>
     </div>
 ​
-    <hr>
+        
     
     <div class = 'box2'>
     <h3 style = "text-align:center;">Mean Income by State</h3>
     <div class = 'explanation'>This map displays 51 US states, with the color of each state representing statewise mean income.
         Choose a year (using the <strong>slider</strong>) and <strong>click</strong> on any state to view mean income ranking by profession categories</div>
-        <iframe width="100%" height="906" frameborder="0"
-        src="https://observablehq.com/embed/076f328cf7e1c43e?cells=map_chart%2Ckey%2Cviewof+yr"></iframe>
+        <iframe width="100%" height="982" frameborder="0"
+  src="https://observablehq.com/embed/031b54f142b893ae?cells=viewof+yr%2Ckey%2Cmap_chart"></iframe>
     </div>
 ​
     
     <div class = 'box2'>
-    <h3 style = "text-align:center;">Explore job counts by state with year</h3>
-    <div class = 'explanation'>The below treemap shows the fifty states, with the area of each box corresponding to the number of employed in that state for the chosen year. If you click in a state, you can zoom into the number of jobs broken down by major categories. Click the header on top that starts with usa... to zoom back out.</div>
-      <iframe width="100%" height="587" frameborder="0"
-    src="https://observablehq.com/embed/@lywu0607/final-project-notebook?cells=treemap"></iframe>
+    <h3 style = "text-align:center;">Employment by State and Occupation</h3>
+    <div class = 'explanation'>The chart shows the 51 US states, with the area of each box corresponding to the total number employed in that state. Use the <strong>slider</strong> to choose a year, then <strong>click</strong> on the state to view total employed by occupation (zoom in). <strong>Click</strong> the top gray bar to go back (zoom out).</div>
+    <iframe width="95%" height="1000" frameborder="0"
+  src="https://observablehq.com/embed/031b54f142b893ae?cells=tree_chart%2Cviewof+byyearTM"></iframe>
     </div>
 ​
-​
+    <div class = "contact">
+
+        <h3 style = "font-size:20px; text-align:center;">Contact</h3>
+        <p style="font-size:15px; text-align:center;">
+        Tony Huang (thwang99@berkeley.edu)<br>
+        Wentian(Jude) Zhu (judezhu@gmail.com)<br>
+        Lucy Wu (lywu@ischool.berkeley.edu)<br>
+        Kevin Xuan (kevinxuan@berkeley.edu) </p>
+    </div>
 </body>
 ​
 </html>
